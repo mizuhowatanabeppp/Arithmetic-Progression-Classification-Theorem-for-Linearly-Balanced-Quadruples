@@ -1,0 +1,68 @@
+Linearly Balanced Quadruples in Four-Term Arithmetic Progressions
+
+This repository contains a short LaTeX note on positive integer quadruples satisfying
+
+[
+ab-cd=a+b+c+d,
+]
+
+equivalently,
+
+[
+(a-1)(b-1)=(c+1)(d+1).
+]
+
+Main result
+
+For a four-term arithmetic progression
+
+[
+n,\ n+r,\ n+2r,\ n+3r,
+]
+
+all linearly balanced pairings are classified, up to exchanging the two variables within each product:
+
+1. r = 1
+[
+{a,b}={n+2,n+3},\qquad {c,d}={n,n+1}.
+]
+2. r = 2
+[
+{a,b}={n+2,n+6},\qquad {c,d}={n,n+4}.
+]
+3. r >= 4
+[
+n=\frac{r(r-3)}2,
+]
+with
+[
+{a,b}={n+r,n+2r},\qquad {c,d}={n,n+3r}.
+]
+
+There is no positive-integer solution with common difference (r=3).
+
+> Note: In item 2, the displayed values are the specialization of
+> ({n+r,n+3r}) and ({n,n+2r}) at (r=2).
+
+Files
+
+• main.tex — paper source
+• README.md — repository overview
+
+Compile
+
+With a standard TeX installation:
+
+```bash
+pdflatex main.tex
+pdflatex main.tex
+```
+
+Status
+
+The note proves the stated classification theorem.
+The elementary factorization itself is not claimed to be new. A dedicated literature review is still needed before making any claim of mathematical priority or novelty.
+
+Author
+
+Mizuho Watanabe
